@@ -6,6 +6,7 @@
   <packaging>pom</packaging>
   <modules>
   	<module>autoj-core</module>
+  	<module>autoj-test</module>
   </modules>
   <dependencies>
   	<dependency>
@@ -13,5 +14,31 @@
   		<artifactId>selenium-java</artifactId>
   		<version>2.45.0</version>
   	</dependency>
+		<!-- Browser Mob Proxy -->
+		<dependency>
+			<groupId>net.lightbody.bmp</groupId>
+			<artifactId>browsermob-proxy</artifactId>
+			<version>2.0.0</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>slf4j-jdk14</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Appium -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+		<!-- Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
   </dependencies>
 </project>
